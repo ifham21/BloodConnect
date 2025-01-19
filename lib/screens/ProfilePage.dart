@@ -1,3 +1,4 @@
+import 'package:bloodconnect/screens/EditProfilePage.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -77,6 +78,12 @@ class ProfilePage extends StatelessWidget {
         backgroundColor: Colors.red,
         onPressed: () {
           // Action for editing (navigate to edit screen)
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => EditProfilePage(),
+            ),
+          );
         },
         child: const Icon(Icons.edit),
       ),

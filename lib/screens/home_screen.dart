@@ -58,13 +58,3 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-// The main Home Page
-
-// Booked Donor Page
-
-
-// Messages Page
-
-
-// Profile Page
-

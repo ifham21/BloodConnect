@@ -1,3 +1,4 @@
+import 'package:bloodconnect/screens/HomePage.dart';
 import 'package:flutter/material.dart';
 import '../widgets/custom_text_field.dart';
 import 'registration_screen.dart';
@@ -37,6 +38,12 @@ class LoginScreen extends StatelessWidget {
         ElevatedButton(
                 onPressed: () {
             // Handle login action
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomePage(),
+                    ),
+                  );
         },
         style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red,
@@ -55,24 +62,24 @@ class LoginScreen extends StatelessWidget {
         // Sign Up Navigation
         GestureDetector(
                 onTap: () {
-            Navigator.push(
+                  Navigator.push(
                     context,
                     MaterialPageRoute(
-                            builder: (context) => RegistrationScreen(),
+                      builder: (context) => RegistrationScreen(),
                     ),
                   );
-        },
-        child: const Text(
-                "Do not have an account? Sign up here.",
-                style: TextStyle(
-                color: Colors.black54,
-                decoration: TextDecoration.underline,
+                },
+                child: const Text(
+                        "Do not have an account? Sign up here.",
+                        style: TextStyle(
+                        color: Colors.black54,
+                        decoration: TextDecoration.underline,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              ),
-            ],
-          ),
-        ),
       ),
     );
     }
