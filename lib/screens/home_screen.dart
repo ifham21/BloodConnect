@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'BookedDonorPage.dart';
+import 'SearchDonorPage.dart';
 import 'HomePage.dart';
 import 'MessagesPage.dart';
 import 'ProfilePage.dart';
@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   // List of pages for the BottomNavigationBar
   final List<Widget> _pages = [
     HomePage(), // The main home page
-    BookedDonorPage(), // Booked Donor Page
+    SearchDonorPage(), // Booked Donor Page
     MessagesPage(), // Messages Page
     ProfilePage(), // Profile Page
   ];
@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.bookmark),
-            label: "Booked Donor",
+            label: "Search Donor",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.message),
