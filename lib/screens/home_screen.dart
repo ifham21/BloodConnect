@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'SearchDonorPage.dart';
 import 'HomePage.dart';
-import 'MessagesPage.dart';
+import 'FAQPage.dart';
 import 'ProfilePage.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _pages = [
     HomePage(), // The main home page
     SearchDonorPage(), // Booked Donor Page
-    MessagesPage(), // Messages Page
+    FAQPage(), // Messages Page
     ProfilePage(), // Profile Page
   ];
 
@@ -45,8 +45,8 @@ class _HomeScreenState extends State<HomeScreen> {
             label: "Search Donor",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.message),
-            label: "Message",
+            icon: Icon(Icons.question_answer),
+            label: "FAQ",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
